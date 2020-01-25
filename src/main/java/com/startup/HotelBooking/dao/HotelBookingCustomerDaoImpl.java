@@ -15,6 +15,7 @@ public class HotelBookingCustomerDaoImpl implements  IHotelBookingCustomerDao  {
 	@Override
 	public List<Hotels> getDefaultHotel() {
 		// TODO Auto-generated method stub
+		System.out.println("Pull Request check");
 		return null;
 	}
 
