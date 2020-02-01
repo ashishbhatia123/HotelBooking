@@ -20,6 +20,7 @@ public class AwsTestDaoImpl implements IAwsTestDaoImpl {
 		AwsTestBean awsTestBean=query.getSingleResult();
 		System.out.println("Hello");
 		System.out.println("ashish");
+		System.out.println("tiwariji" );
 		return awsTestBean;
 	}
 
