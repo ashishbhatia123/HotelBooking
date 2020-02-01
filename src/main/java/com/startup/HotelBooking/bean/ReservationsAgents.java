@@ -39,6 +39,8 @@ public class ReservationsAgents {
 	private String raMailAddress;
 	@Column(name="ra_Gender")
 	private String raGender;
+	@Column(name="ra_IsActive")
+	private Boolean isActive;
 	
 	@OneToMany(mappedBy="bReservationAgentID",cascade=CascadeType.ALL)
 	private List<Bookings> bookingID = new ArrayList<>();
@@ -50,7 +52,7 @@ public class ReservationsAgents {
 
 	public ReservationsAgents(String raReservationAgentID, String raFirstName, String ra_LastName, String raAddress,
 			String raAddress2, String raCity, String raState, String raZipCode, String raCountry,
-			String raHomephoneNumber, String raCellularNumber, String raMailAddress, String raGender,
+			String raHomephoneNumber, String raCellularNumber, String raMailAddress, String raGender, Boolean isActive,
 			List<Bookings> bookingID) {
 		super();
 		this.raReservationAgentID = raReservationAgentID;
@@ -66,6 +68,7 @@ public class ReservationsAgents {
 		this.raCellularNumber = raCellularNumber;
 		this.raMailAddress = raMailAddress;
 		this.raGender = raGender;
+		this.isActive = isActive;
 		this.bookingID = bookingID;
 	}
 
@@ -173,6 +176,14 @@ public class ReservationsAgents {
 		this.raGender = raGender;
 	}
 
+	public Boolean getIsActive() {
+		return isActive;
+	}
+
+	public void setIsActive(Boolean isActive) {
+		this.isActive = isActive;
+	}
+
 	public List<Bookings> getBookingID() {
 		return bookingID;
 	}
@@ -187,8 +198,13 @@ public class ReservationsAgents {
 				+ ", ra_LastName=" + ra_LastName + ", raAddress=" + raAddress + ", raAddress2=" + raAddress2
 				+ ", raCity=" + raCity + ", raState=" + raState + ", raZipCode=" + raZipCode + ", raCountry="
 				+ raCountry + ", raHomephoneNumber=" + raHomephoneNumber + ", raCellularNumber=" + raCellularNumber
-				+ ", raMailAddress=" + raMailAddress + ", raGender=" + raGender + ", bookingID=" + bookingID + "]";
+				+ ", raMailAddress=" + raMailAddress + ", raGender=" + raGender + ", isActive=" + isActive
+				+ ", bookingID=" + bookingID + "]";
 	}
+
+	
+
+
 	
 	
 
