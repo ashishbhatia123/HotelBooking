@@ -12,11 +12,11 @@ public interface IHotelBookingAdminDao {
 	
 	
 	
-	public List<ReservationsAgents> getReservationAgentDetailStateWise();           
-	public List<ReservationsAgents> getReservationAgentHotelsCityWise();
-	public List<ReservationsAgents> getParticularReservationAgentDetail();   
-	public List<ReservationsAgents> getReservationAgents_HotelDetails();   
-	public List<ReservationsAgents> getBlockReservationAgent();    
+	public List<ReservationsAgents> getReservationAgentDetailStateWise(String state);           
+	public List<ReservationsAgents> getReservationAgentHotelsCityWise(String city);
+	public List<ReservationsAgents> getParticularReservationAgentDetail(String reservationAgentID);   
+	public List<ReservationsAgents> getReservationAgents_HotelDetails(String reservationAgentID);   
+	public List<ReservationsAgents> getBlockReservationAgent(String reservationAgentID);    
 	public ReservationsAgents blockTheReservationAgent() ;   
 	public Boolean insertTheReservationAgentDetail(ReservationsAgents objects);
 	public Boolean updateByAdminReservationAgentProfile();
@@ -42,12 +42,12 @@ public interface IHotelBookingAdminDao {
 	public Boolean FixingPercentageOfProfitOnHotelRatesByAdmin();
 			
 			
-	public List<Bookings>getSalesDetailsDateWise();
-	public List<Bookings> getSalesDetailStateWise();
-	public List<Bookings> getSalesDetailCityWise();
-	public List<Bookings> getSalesDetailHotelWise();
-	public List<Bookings> getSalesDetailCity_localityWise();            
-	public List<Bookings> getSalesDetailsReservationAgentWise();
+	public List<Bookings>getSalesDetailsDateWise(String date);
+	public List<Bookings> getSalesDetailStateWise(String state);
+	public List<Bookings> getSalesDetailCityWise(String city);
+	public List<Bookings> getSalesDetailHotelWise(String hotel);
+	public List<Bookings> getSalesDetailCity_localityWise(String locality);            
+	public List<Bookings> getSalesDetailsReservationAgentWise(String reservationAgent);
 
 
 

@@ -19,36 +19,6 @@ public class HotelBookingAdminServiceImpl implements IHotelBookingAdminService {
 	@Autowired
 	IHotelBookingAdminDao iHotelBookingAdminDao;
 	@Override
-	public List<ReservationsAgents> getReservationAgentDetailStateWise() {
-		// TODO Auto-generated method stub
-		return iHotelBookingAdminDao.getReservationAgentDetailStateWise();
-	}
-
-	@Override
-	public List<ReservationsAgents> getReservationAgentHotelsCityWise() {
-		// TODO Auto-generated method stub
-		return iHotelBookingAdminDao.getReservationAgentHotelsCityWise();
-	}
-
-	@Override
-	public List<ReservationsAgents> getParticularReservationAgentDetail() {
-		// TODO Auto-generated method stub
-		return iHotelBookingAdminDao.getParticularReservationAgentDetail();
-	}
-
-	@Override
-	public List<ReservationsAgents> getReservationAgents_HotelDetails() {
-		// TODO Auto-generated method stub
-		return iHotelBookingAdminDao.getReservationAgents_HotelDetails();
-	}
-
-	@Override
-	public List<ReservationsAgents> getBlockReservationAgent() {
-		// TODO Auto-generated method stub
-		return iHotelBookingAdminDao.getBlockReservationAgent();
-	}
-
-	@Override
 	public ReservationsAgents blockTheReservationAgent() {
 		// TODO Auto-generated method stub
 		return iHotelBookingAdminDao.blockTheReservationAgent();
@@ -144,41 +114,7 @@ public class HotelBookingAdminServiceImpl implements IHotelBookingAdminService {
 		return iHotelBookingAdminDao.FixingPercentageOfProfitOnHotelRatesByAdmin();
 	}
 
-	@Override
-	public List<Bookings> getSalesDetailsDateWise() {
-		// TODO Auto-generated method stub
-		return iHotelBookingAdminDao.getSalesDetailsDateWise();
-	}
 
-	@Override
-	public List<Bookings> getSalesDetailStateWise() {
-		// TODO Auto-generated method stub
-		return iHotelBookingAdminDao.getSalesDetailStateWise();
-	}
-
-	@Override
-	public List<Bookings> getSalesDetailCityWise() {
-		// TODO Auto-generated method stub
-		return iHotelBookingAdminDao.getSalesDetailCityWise();
-	}
-
-	@Override
-	public List<Bookings> getSalesDetailHotelWise() {
-		// TODO Auto-generated method stub
-		return iHotelBookingAdminDao.getSalesDetailHotelWise();
-	}
-
-	@Override
-	public List<Bookings> getSalesDetailCity_localityWise() {
-		// TODO Auto-generated method stub
-		return iHotelBookingAdminDao.getSalesDetailCity_localityWise();
-	}
-
-	@Override
-	public List<Bookings> getSalesDetailsReservationAgentWise() {
-		// TODO Auto-generated method stub
-		return iHotelBookingAdminDao.getSalesDetailsReservationAgentWise();
-	}
 
 	@Override
 	public List<Guests> getCustomerDetailsDateWise(Date from, Date to) {
@@ -226,6 +162,72 @@ public class HotelBookingAdminServiceImpl implements IHotelBookingAdminService {
 	public List<Guests> getBlockCustomerDetail() {
 		// TODO Auto-generated method stub
 		return iHotelBookingAdminDao.getBlockCustomerDetail();
+	}
+
+	@Override
+	public List<ReservationsAgents> getReservationAgentDetailStateWise(String state) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<ReservationsAgents> getReservationAgentHotelsCityWise(String city) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<ReservationsAgents> getParticularReservationAgentDetail(String reservationAgent) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<ReservationsAgents> getReservationAgents_HotelDetails() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<ReservationsAgents> getBlockReservationAgent() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Bookings> getSalesDetailsDateWise(String date) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Bookings> getSalesDetailStateWise(String state) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Bookings> getSalesDetailCityWise(String city) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Bookings> getSalesDetailHotelWise(String hotel) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Bookings> getSalesDetailCity_localityWise(String locality) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Bookings> getSalesDetailsReservationAgentWise(String reservationAgent) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
